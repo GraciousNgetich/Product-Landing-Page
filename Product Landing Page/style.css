@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  background: linear-gradient(75deg, #c0c0c0, #ffb499);
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+#image {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+
+#image > div {
+  background-color: #cccccc;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 32px;
+}
+
+#container {
+  display: flex;
+  flex-flow: column wrap;
+}
+#main-body {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 100px;
+}
+
+a {
+  font-family: "Rubik", sans-serif;
+  columns: #cf449a;
+  text-decoration: none;
+}
+
+a:hover {
+  animation-name: color-change-nav;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+#features,
+#how-it-works,
+#pricing {
+  padding-bottom: 100px;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#header > div > nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c77979;
+}
+
+#pricing {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 300px;
+  min-width: 100px;
+  background-color: #fff;
+  margin: 0px, 20px, 0px, 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  border: 3px solid darkgrey;
+  border-radius: 3%;
+  margin: 5px;
+}
+
+.box-title {
+  width: 100%;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+}
+
+.box-description {
+  text-align: center;
+}
+
+button {
+  background-color: #ffaa33;
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 5%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+
+button:hover {
+  animation-name: color-change-orange;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#submit {
+  background-color: #ffaa33;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+  font-family: "Rubik", sans-serif;
+}
+
+submit:hover {
+  animation-name: color-change-orange;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#footer > div > nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ac3737;
+}
+
+@keyframes color-change-orange {
+  100% {
+    background-color: #996e31;
+  }
+}
+
+@media (max-width: 1000px) {
+  .box {
+    min-width: 300px;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  footer > div > p {
+    width: 60%;
+  }
+  #header > div > nav {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .box {
+    margin-top: 20px;
+  }
+  footer > div > p {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  footer > div > p {
+    width: 100%;
+  }
+}
